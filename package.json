@@ -1,5 +1,5 @@
 {
-  "name": "cr-bot",
+  "name": "code-review-gpt",
   "version": "1.0.0",
   "private": true,
   "description": "A Probot app",
@@ -25,6 +25,7 @@
     "dotenv": "^16.0.3",
     "next": "^13.1.6",
     "node-fetch": "^3.3.0",
+    "pino-std-serializers": "^6.1.0",
     "probot": "^12.2.4"
   },
   "devDependencies": {
