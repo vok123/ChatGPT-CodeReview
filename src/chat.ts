@@ -14,11 +14,7 @@ export class Chat {
   }
 
   private generatePrompt = (patch: string) => {
-    const answerLanguage = process.env.LANGUAGE
-      ? `Answer me in ${process.env.LANGUAGE},`
-      : '';
-
-    return `Bellow is the code patch, please help me do a brief code review,${answerLanguage} if any bug risk and improvement suggestion are welcome
+    return `以下是代码补丁，请使用中文回答帮我进行简要的代码审查，欢迎指出任何错误风险和改进建议(风险可以使用红色或者粗体标明)。
     ${patch}
     `;
   };
