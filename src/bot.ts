@@ -33,7 +33,7 @@ export const robot = (app: Probot) => {
         repo: repo.repo,
         owner: repo.owner,
         issue_number: context.pullRequest().pull_number,
-        body: `Seems you are using me but didn't get OPENAI_API_KEY seted in Variables/Secrets for this repo. you could follow [readme](https://github.com/anc95/ChatGPT-CodeReview) for more information`,
+        body: `Seems you are using me but didn't get OPENAI_API_KEY seted in Variables/Secrets for this repo. you could follow [readme](https://github.com/vok123/ChatGPT-CodeReview) for more information`,
       });
       return null;
     }
